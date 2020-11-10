@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/69293e098c.js" crossorigin="anonymous"></script>
+    <title>Isaac Shepard's Portfolio Page</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <!-- Navbar -->
+        <div id='icons'>
+            <a href="./public/Isaac-Shepard-Resume.pdf"><i class="far fa-file" fa-3x></i></a>
+            <a href="https://github.com/shepardi"><i class="fab fa-github" fa-3x></i></a>
+            <a href="https://www.linkedin.com/in/isaacshepard77"><i class="fab fa-linkedin" fa-3x></i></a>
+        </div>
+
+    </nav>
+
+    <main>
+        <!-- About Me -->
+        <section id="about_me">
+            <h4>Hello. I'm Isaac Shepard.</h4>
+            <p>I am a software engineer specialize in full-stack web developing. </p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h4>I know</h4>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>JavaScript, Python, SQL, HTML,CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Node.js, React, Django, jQuery, JSON</td>
+                    </tr>
+                    <tr>
+                        <td>PostgreSQL, MongoDB</td>
+                    </tr>
+                    <tr>
+                        <td>Git, Heroku</td>
+                    </tr>
+                    <tr>
+                        <td>Jest/Enzyme, Jenkins</td>
+                    </tr>
+                    <tr>
+                        <td>C/C++, C#</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Projects -->
+        <section id="my_projects">
+            <!-- Title -->
+            <h4>My Projects</h4>
+
+            <!-- Albion Online Hub -->
+            <article>
+                <img src="./public/images/AO-Hub.png" alt="Albion Online Hub">
+                <div class="description">
+                    <h3>Albion Online Hub</h3>
+                    <p>A Stroop Effect game handled by JavaScript and JQuery.</p>
+                    <div class="links">
+                        <a href="#">
+                            <i class="fas fa-link"> (In-progress)Website</i>
+                        </a>
+                        <a href="https://git/shepardi/AO-Hub">
+                            <i class="fab fa-github"> Github</i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </article>
+
+            <!-- Lucid Dreaming -->
+            <!-- Way Farer -->
+
+            <!-- Wok & Grill -->
+            <article>
+                <img src="./public/Screen Shot 2020-07-23 at 5.23.33 AM.png" alt="">
+                <div class="description">
+                    <h3>Wok & Grill</h3>
+                    <p>A restaurant website built with ExpressJS and MongoDB.</p>
+                    <div class="demo">
+                        <p>Demo</p>
+                        <p>Email: admin@gmail.com</p>
+                        <p>Password:1234</p>
+                    </div>
+                    <div class="links">
+                        <a href="https://workandgrill.herokuapp.com/">
+                            <i class="fas fa-link"> Website</i>
+                        </a>
+                        <a href="https://git.generalassemb.ly/AustinkChow/WOK-AND-GRILL-2">
+                            <i class="fab fa-github"> Github</i>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- Slime Game -->
+
+            <!-- Shots -->
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact_me">
+            <h2>Contact Me!</h2>
+            <form action="https://formspree.io/f/xqkglazb" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="file"></label>
+                    <input type="file" name="upload" id="file-upload">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+        </section>
+    </main>
+</body>
+
+</html>
