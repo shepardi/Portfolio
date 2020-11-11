@@ -11,20 +11,22 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #182C49;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #bd5d38;
-  --yellow: #ffc107;
+  --yellow: #d8a20c;
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #bd5d38;
+  --primary: #be9e0f;
+  --primary-hover:#f3ed9f;
+  --primary-shade:#88710b;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -32,6 +34,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --cream: #ececec;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -66,7 +69,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: var(--cream);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -159,12 +162,12 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: var(--primary-shade);
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #824027;
+  color: var(--yellow);
   text-decoration: underline;
 }
 
@@ -3884,7 +3887,7 @@ input[type=button].btn-block {
   text-decoration: none;
 }
 .nav-link.disabled {
-  color: #6c757d;
+  color: var(--primary);
   pointer-events: none;
   cursor: default;
 }
@@ -4277,25 +4280,29 @@ input[type=button].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: var(--cream);
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: var(--cream);
 }
+/* Nav normal */
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(212, 182, 44, 0.918);
 }
+/* Nav Hover */
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(243, 205, 78, 0.932);
+  transform:scale(1.1);
 }
+/* Nav Inactive */
 .navbar-dark .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(241, 218, 82, 0.25);
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color:var(--cream);
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
@@ -4305,13 +4312,13 @@ input[type=button].btn-block {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(226, 196, 63, 0.5);
 }
 .navbar-dark .navbar-text a {
-  color: #fff;
+  color: rgb(226, 171, 69);
 }
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-  color: #fff;
+  color: rgb(223, 182, 70);
 }
 
 .card {
@@ -6075,7 +6082,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: var(--blue) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9777,11 +9784,11 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+  color: var(--primary) !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #824027 !important;
+  color: var(--primary-hover) !important;
 }
 
 .text-secondary {
@@ -10021,7 +10028,7 @@ p.lead {
   text-transform: uppercase;
 }
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: #6ea6d4;
 }
 
 @media (min-width: 992px) {
@@ -10079,7 +10086,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: var(--primary);
 }
 
 .dev-icons {
@@ -10101,7 +10108,7 @@ section.resume-section .resume-section-content {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: 70vh;
   }
 }
 @media (min-width: 992px) {
