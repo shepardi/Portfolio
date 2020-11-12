@@ -397,6 +397,7 @@ h6, .h6 {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  line-height: 1.8rem;
 }
 
 .display-1 {
@@ -1939,6 +1940,9 @@ pre code {
   }
   .table-responsive-sm > .table-bordered {
     border: 0;
+  }
+  #typewriter{
+    font-size: 1em !important;
   }
 }
 @media (max-width: 767.98px) {
@@ -10104,6 +10108,7 @@ p.lead {
 }
 .social-icons .social-icon:hover {
   background-color: var(--primary);
+  transform: scale(1.2);
 }
 
 .dev-icons {
@@ -10148,12 +10153,16 @@ section.resume-section .resume-section-content {
 .var-highlight{
   color: var(--primary-shade);
 }
+.comment-highlight{
+  color: var(--green);
+}
 .string-highlight{
 	color: var(--primary);
 }
 
+
 #typewriter{
-  font-size: 100%;
+  font-size: 1.3em;
   margin: 0;
   font-family: "Courier New";
 }

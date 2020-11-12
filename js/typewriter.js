@@ -9,7 +9,7 @@ function setupTypewriter(t) {
         tag = "",
         writingTag = false,
         tagOpen = false,
-        typeSpeed = 10,
+        typeSpeed = 0,
         tempTypeSpeed = 0;
 
     var type = function () {
@@ -19,7 +19,7 @@ function setupTypewriter(t) {
         }
 
         if (HTML[cursorPosition] === "<") {
-            tempTypeSpeed = 0;
+            tempTypeSpeed = 10;
             if (tagOpen) {
                 tagOpen = false;
                 writingTag = true;
@@ -70,3 +70,4 @@ var typewriter = document.getElementById('typewriter');
 typewriter = setupTypewriter(typewriter);
 
 typewriter.type();
+
