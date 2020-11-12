@@ -18,6 +18,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 
+
 </head>
 
 <body id="page-top">
@@ -55,7 +56,7 @@
         <!-- About-->
         <section class="resume-section" id="about">
             <div class="resume-section-content">
-                <h1 class="mb-0">
+                <h1 class="mb-0" id="profile-name">
                     Isaac
                     <span class="text-primary">Shepard</span>
                 </h1>
@@ -92,53 +93,18 @@
             <div class="resume-section-content container-fluid">
                 <h2 class="mb-2">Skills</h2>
 
-                <div class="row">
-                    <!-- Programming Languages  -->
-                    <div class="col-3">
-                        <div class="subheading mb-2">OOP Languages </div>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">C/C++</li>
-                            <li class="list-inline-item">NodeJS</li>
-                            <li class="list-inline-item">Python</li>
-                        </ul>
-                    </div>
+                <!-- TypeWriter  -->
+                <pre id="typewriter">
+<span class="var-highlight">var</span> mySkills = {
+    languages: [<span class="string-highlight">'C/C++', 'Node.js', 'Python'</span>],
+    front_end: [<span class="string-highlight">'HTML5', 'CSS3/SASS', 'JavaScript', 'React.js'</span>],
+    back_end: [<span class="string-highlight">'MongoDB','PostgreSQL'</span>],
+    dev_tools:[<span class="string-highlight">'AWS', 'Jenkins', 'Jest', 'Enzyme'</span>];
+}; </pre>
 
-                    <!-- Front End -->
-                    <div class="col-3">
-                        <div class="subheading mb-2">Front-End Development</div>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">HTML5</li>
-                            <li class="list-inline-item">CSS3</li>
-                            <li class="list-inline-item">SASS</li>
-                            <li class="list-inline-item">Javascript</li>
-                            <li class="list-inline-item">React</li>
-                        </ul>
-                    </div>
-
-                    <!-- Back End -->
-                    <div class="col-3">
-                        <div class="subheading mb-2">Back-End Development</div>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">MongoDB</li>
-                            <li class="list-inline-item">PostgreSQL</li>
-                        </ul>
-                    </div>
-
-                    <!-- Development and Testing tools -->
-                    <div class="col-3">
-                        <div class="subheading mb-2">Development & Testing Tools</div>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">Jenkins</li>
-                            <li class="list-inline-item">AWS</li>
-                            <li class="list-inline-item">Jest</li>
-                            <li class="list-inline-item">Enzyme</li>
-                        </ul>
-                    </div>
-
-                </div>
 
                 <!-- Work Flow -->
-                <div class="subheading mt-2 mb-2">Workflow</div>
+                <div class="subheading mt-4 mb-2">Workflow</div>
                 <ul class="fa-ul mb-0">
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -166,268 +132,271 @@
                         Continuos Integration / Continuos Deployment
                     </li>
                 </ul>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Projects -->
-        <section class="resume-section" id="projects">
-            <div class="resume-section-content">
-                <h2 class="mb-4">Projects</h2>
-
-                <!-- Albion Online Hub -->
-                <div class="row mb-3">
-
-                    <div class="col-lg-6">
-
-                        <!-- Title -->
-                        <h3 class="d-inline">Albion Online Hub</h3>
-
-                        <!-- Tech Stack -->
-                        <p class="d-inline-block">React | Node | MongoDB | Express | D3.js | Jest/Enzyme | Jenkins </p>
-
-                        <!-- Description -->
-                        <p>Web Application for the MMORPG Albion Online with a goal to allow players to keep up to date
-                            with in-game events in real time without logging into the game itself. Using the game's API
-                            to grab information and media files to display live in-game information.</p>
-                        <p>Also allows players to register and login to create profiles that display in-game character
-                            information, and organize group forms for territory fights and dungeon raids.</p>
-
-                        <!-- Features -->
-                        <h5>Features</h5>
-                        <ul>
-                            <li><span class="badge badge-danger">Live</span> Image Map with event/battle alerts</li>
-                            <li><span class="badge badge-danger">Live</span> In-game Gold Market Graph</li>
-                            <li><span class="badge badge-warning">Testing</span> 3d armor/weapon model viewer</li>
-                            <li><span class="badge badge-success">Online</span> Profile with in-game character stats
-                            </li>
-                            <li><span class="badge badge-success">Online</span> Group Player Organizer ( Territory Raid/
-                                Dungeon Raid)
-                            </li>
-                            <li><span class="badge badge-warning">In Progress</span> Guild Master's Politics Blog
-                            </li>
-
-                        </ul>
-
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid rounded" src="./images/AO-Hub.png" alt="">
-                    </div>
-                </div>
-                <hr class="my-5">
-
-                <!-- WayFarer -->
-                <div class="row mb-3">
-
-                    <div class="col-lg-6">
-
-                        <!-- Title -->
-                        <h3 class="d-inline">WayFarer</h3>
-
-                        <!-- Tech Stack -->
-                        <p class="d-inline-block">Python | Django | PostgreSQL| Jinja </p>
-
-                        <!-- Description -->
-                        <p>Web Application that enables travelers around the world to post "must see" landmarks.
-                            Categorizes each landmark in its own tab and allows users to make a post and uploading
-                            pictures.</p>
-
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid rounded" src="./images/Wayfarer.png" alt="">
-                    </div>
-                </div>
-                <hr class="my-5">
-
-                <!-- Wok & Grill -->
-                <div class="row mb-3">
-
-                    <div class="col-lg-6">
-
-                        <!-- Title -->
-                        <h3 class="d-inline">Wok & Grill</h3>
-
-                        <!-- Tech Stack -->
-                        <p class="d-inline-block">NodeJS | MongoDB| Express| EmbeddedJS </p>
-
-                        <!-- Description -->
-                        <p>Chinese themed restaurant website with site builder functionality. Allows admins to update
-                            and change menu items, through a custom made UI on the browser. Uploading images and files
-                            along with sticky note feature.</p>
-
-                        <!-- Features -->
-                        <h5>Features</h5>
-                        <ul>
-                            <li> User Account and Profile</li>
-                            <li> Site editor UI</li>
-                            <li> Comment wall with sticky note feature</li>
-                            <li> Menu Browser</li>
-                        </ul>
-
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid rounded" src="./images/Wok&Grill.png" alt="">
-                    </div>
-                </div>
-                <hr class="my-5">
-
-                <!-- Lucid Dreaming -->
-                <div class="row mb-3">
-
-                    <div class="col-lg-6">
-
-                        <!-- Title -->
-                        <h3 class="d-inline">Lucid Dreaming</h3>
-
-                        <!-- Tech Stack -->
-                        <p class="d-inline-block">C# | Unity3D| GoogleVR| Git </p>
-
-                        <!-- Description -->
-                        <p> Virtual Reality game built for the Google VR headset (Google Daydream). The game is a
-                            fantasy zelda like game that brings the player into a dream like world, where they must
-                            fight off unknown enemies and solve puzzles as they explore the new world.</p>
-
-                        <!-- Features -->
-                        <h5>Features</h5>
-                        <ul>
-                            <li> Character creation and movement adjustments</li>
-                            <li> Movement via hand controls with 3D headmovement</li>
-                            <li> RPG UI (Health,Mana,Inventory, ...)</li>
-                        </ul>
-
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid rounded" src="./images/Lucid Dreaming.png" alt="">
-                    </div>
-                </div>
-                <hr class="my-5">
-
-                <!-- Cute Slime Adventure Game -->
-                <div class="row mb-3">
-
-                    <div class="col-lg-6">
-
-                        <!-- Title -->
-                        <h3 class="d-inline">Cute Slime Adventure Game</h3>
-
-                        <!-- Tech Stack -->
-                        <p class="d-inline-block"> jQuery | Javascript | HTML/CSS </p>
-
-                        <!-- Description -->
-                        <p> Thought I'd make a cute little side scrolling game of a slime ball fighting his way through
-                            the forest.</p>
-                        <p>A slime with a gun, what more can you ask for?</p>
-
-                        <!-- Features -->
-                        <h5>Features</h5>
-                        <ul>
-                            <li> Front-Back movement, Attack</li>
-                            <li> Inventory ( health potions, weapon upgrades) </li>
-                            <li> RPG UI (Health,Mana,Inventory, ...)</li>
-                            <li> Monster Spawn</li>
-                        </ul>
-
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid rounded" src="./images/Slime-Game.png" alt="">
-                    </div>
-                </div>
-                <hr class="my-5">
 
             </div>
-        </section>
-        <hr class="m-0" />
+    </div>
+    </section>
+    <hr class="m-0" />
 
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
-                    <!-- UCSD -->
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">University of California, San Diego</h3>
-                        <div class="subheading mb-0">Bachelor of Science</div>
-                        <div>Mathematics - Computer Science</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">September 20016 - March 2020</span></div>
+    <!-- Projects -->
+    <section class="resume-section" id="projects">
+        <div class="resume-section-content">
+            <h2 class="mb-4">Projects</h2>
+
+            <!-- Albion Online Hub -->
+            <div class="row mb-3">
+
+                <div class="col-lg-6">
+
+                    <!-- Title -->
+                    <h3 class="d-inline">Albion Online Hub</h3>
+
+                    <!-- Tech Stack -->
+                    <p class="d-inline-block">React | Node | MongoDB | Express | D3.js | Jest/Enzyme | Jenkins </p>
+
+                    <!-- Description -->
+                    <p>Web Application for the MMORPG Albion Online with a goal to allow players to keep up to date
+                        with in-game events in real time without logging into the game itself. Using the game's API
+                        to grab information and media files to display live in-game information.</p>
+                    <p>Also allows players to register and login to create profiles that display in-game character
+                        information, and organize group forms for territory fights and dungeon raids.</p>
+
+                    <!-- Features -->
+                    <h5>Features</h5>
+                    <ul>
+                        <li><span class="badge badge-danger">Live</span> Image Map with event/battle alerts</li>
+                        <li><span class="badge badge-danger">Live</span> In-game Gold Market Graph</li>
+                        <li><span class="badge badge-warning">Testing</span> 3d armor/weapon model viewer</li>
+                        <li><span class="badge badge-success">Online</span> Profile with in-game character stats
+                        </li>
+                        <li><span class="badge badge-success">Online</span> Group Player Organizer ( Territory Raid/
+                            Dungeon Raid)
+                        </li>
+                        <li><span class="badge badge-warning">In Progress</span> Guild Master's Politics Blog
+                        </li>
+
+                    </ul>
+
                 </div>
-
-                <!-- General Assembly -->
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">General Assembly</h3>
-                        <div class="subheading mb-3">Software Engineering</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">April 2020 - August 2020</span></div>
+                <div class="col-lg-6">
+                    <img class="img-fluid rounded" src="./images/AO-Hub.png" alt="">
                 </div>
-
             </div>
-        </section>
+            <hr class="my-5">
 
-        <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Experience</h2>
+            <!-- WayFarer -->
+            <div class="row mb-3">
 
-                <!-- Junior Full Stack Developer -->
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Junior Full Stack Engineer</h3>
-                        <div class="subheading mb-3">General Asssembly</div>
-                        <p>Built responsive and scalable web applications using modern web stack technologies.
-                            Refactored Express applications into React for faster rendering for Single Page
-                            Applications.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">April 2020 - August 2020</span>
-                    </div>
+                <div class="col-lg-6">
+
+                    <!-- Title -->
+                    <h3 class="d-inline">WayFarer</h3>
+
+                    <!-- Tech Stack -->
+                    <p class="d-inline-block">Python | Django | PostgreSQL| Jinja </p>
+
+                    <!-- Description -->
+                    <p>Web Application that enables travelers around the world to post "must see" landmarks.
+                        Categorizes each landmark in its own tab and allows users to make a post and uploading
+                        pictures.</p>
+
                 </div>
-
-                <!-- Triton XR -->
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">VR Game Programmer</h3>
-                        <div class="subheading mb-3">Triton XR</div>
-                        <p>
-                            Worked in teams to build out VR applications and researched and developed better control
-                            methods, allowing users to avoid motion sickness. Made games playable on the Occulus Rift
-                            and Google Daydream.
-                        </p>
-
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">January 2017 - March 2018</span></div>
+                <div class="col-lg-6">
+                    <img class="img-fluid rounded" src="./images/Wayfarer.png" alt="">
                 </div>
-
             </div>
-        </section>
+            <hr class="my-5">
 
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-3">Interests</h2>
+            <!-- Wok & Grill -->
+            <div class="row mb-3">
 
-                <p class="mb-4"><i class="fas fa-gamepad"></i> &nbsp Apart from being a coder I'm a gamer, building out
-                    cities in Minecraft or grinding my life away on Albion Online ( a MMORPG ).
-                    Other than gaming, I read light novels and interesting Medium articles. I like to keep up with the
-                    latest tech that comes out and see if I can play around with it.
-                </p>
+                <div class="col-lg-6">
 
-                <p class="mb-4"><i class="fas fa-hiking"></i> &nbsp When I do go out doors I like to spend my time
-                    working out
-                    or try my luck on the basketball court. Going fishing when theres lake near by, fish somehow just
-                    tastes better when you
-                    catch it
-                    yourself.</p>
+                    <!-- Title -->
+                    <h3 class="d-inline">Wok & Grill</h3>
 
-                <p class="mb-4"><i class="fas fa-street-view"></i> &nbsp I've been doing my research on how to program
-                    radars using
-                    Adruino as the programmable hardware. The end goal is to detect moving objects like deer on highways
-                    to prevent car crashes.</p>
+                    <!-- Tech Stack -->
+                    <p class="d-inline-block">NodeJS | MongoDB| Express| EmbeddedJS </p>
+
+                    <!-- Description -->
+                    <p>Chinese themed restaurant website with site builder functionality. Allows admins to update
+                        and change menu items, through a custom made UI on the browser. Uploading images and files
+                        along with sticky note feature.</p>
+
+                    <!-- Features -->
+                    <h5>Features</h5>
+                    <ul>
+                        <li> User Account and Profile</li>
+                        <li> Site editor UI</li>
+                        <li> Comment wall with sticky note feature</li>
+                        <li> Menu Browser</li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid rounded" src="./images/Wok&Grill.png" alt="">
+                </div>
             </div>
-        </section>
+            <hr class="my-5">
+
+            <!-- Lucid Dreaming -->
+            <div class="row mb-3">
+
+                <div class="col-lg-6">
+
+                    <!-- Title -->
+                    <h3 class="d-inline">Lucid Dreaming</h3>
+
+                    <!-- Tech Stack -->
+                    <p class="d-inline-block">C# | Unity3D| GoogleVR| Git </p>
+
+                    <!-- Description -->
+                    <p> Virtual Reality game built for the Google VR headset (Google Daydream). The game is a
+                        fantasy zelda like game that brings the player into a dream like world, where they must
+                        fight off unknown enemies and solve puzzles as they explore the new world.</p>
+
+                    <!-- Features -->
+                    <h5>Features</h5>
+                    <ul>
+                        <li> Character creation and movement adjustments</li>
+                        <li> Movement via hand controls with 3D headmovement</li>
+                        <li> RPG UI (Health,Mana,Inventory, ...)</li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid rounded" src="./images/Lucid Dreaming.png" alt="">
+                </div>
+            </div>
+            <hr class="my-5">
+
+            <!-- Cute Slime Adventure Game -->
+            <div class="row mb-3">
+
+                <div class="col-lg-6">
+
+                    <!-- Title -->
+                    <h3 class="d-inline">Cute Slime Adventure Game</h3>
+
+                    <!-- Tech Stack -->
+                    <p class="d-inline-block"> jQuery | Javascript | HTML/CSS </p>
+
+                    <!-- Description -->
+                    <p> Thought I'd make a cute little side scrolling game of a slime ball fighting his way through
+                        the forest.</p>
+                    <p>A slime with a gun, what more can you ask for?</p>
+
+                    <!-- Features -->
+                    <h5>Features</h5>
+                    <ul>
+                        <li> Front-Back movement, Attack</li>
+                        <li> Inventory ( health potions, weapon upgrades) </li>
+                        <li> RPG UI (Health,Mana,Inventory, ...)</li>
+                        <li> Monster Spawn</li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid rounded" src="./images/Slime-Game.png" alt="">
+                </div>
+            </div>
+            <hr class="my-5">
+
+        </div>
+    </section>
+    <hr class="m-0" />
+
+    <hr class="m-0" />
+    <!-- Education-->
+    <section class="resume-section" id="education">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Education</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+
+                <!-- UCSD -->
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">University of California, San Diego</h3>
+                    <div class="subheading mb-0">Bachelor of Science</div>
+                    <div>Mathematics - Computer Science</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">September 20016 - March 2020</span></div>
+            </div>
+
+            <!-- General Assembly -->
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">General Assembly</h3>
+                    <div class="subheading mb-3">Software Engineering</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">April 2020 - August 2020</span></div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="m-0" />
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Experience</h2>
+
+            <!-- Junior Full Stack Developer -->
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Junior Full Stack Engineer</h3>
+                    <div class="subheading mb-3">General Asssembly</div>
+                    <p>Built responsive and scalable web applications using modern web stack technologies.
+                        Refactored Express applications into React for faster rendering for Single Page
+                        Applications.</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">April 2020 - August 2020</span>
+                </div>
+            </div>
+
+            <!-- Triton XR -->
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">VR Game Programmer</h3>
+                    <div class="subheading mb-3">Triton XR</div>
+                    <p>
+                        Worked in teams to build out VR applications and researched and developed better control
+                        methods, allowing users to avoid motion sickness. Made games playable on the Occulus Rift
+                        and Google Daydream.
+                    </p>
+
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">January 2017 - March 2018</span></div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="m-0" />
+    <!-- Interests-->
+    <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+            <h2 class="mb-3">Interests</h2>
+
+            <p class="mb-4"><i class="fas fa-gamepad"></i> &nbsp Apart from being a coder I'm a gamer, building out
+                cities in Minecraft or grinding my life away on Albion Online ( a MMORPG ).
+                Other than gaming, I read light novels and interesting Medium articles. I like to keep up with the
+                latest tech that comes out and see if I can play around with it.
+            </p>
+
+            <p class="mb-4"><i class="fas fa-hiking"></i> &nbsp When I do go out doors I like to spend my time
+                working out
+                or try my luck on the basketball court. Going fishing when theres lake near by, fish somehow just
+                tastes better when you
+                catch it
+                yourself.</p>
+
+            <p class="mb-4"><i class="fas fa-street-view"></i> &nbsp I've been doing my research on how to program
+                radars using
+                Adruino as the programmable hardware. The end goal is to detect moving objects like deer on highways
+                to prevent car crashes.</p>
+        </div>
+    </section>
 
     </div>
 
@@ -442,7 +411,9 @@
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
+    <script src="js/typewriter.js"></script>
     <script src="js/scripts.js"></script>
+
 
 </body>
 

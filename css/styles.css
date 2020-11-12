@@ -455,7 +455,23 @@ mark,
 .list-inline-item {
   display: inline-block;
   font-size: 1rem;
+  color: var(--primary-shade);
 }
+
+/* Custom */
+/* Skills flashing line */
+@keyframes blink{
+  50% { border-bottom: solid 1px black;}
+
+}
+
+.list-inline-item:hover{
+  transform: scale(1.2);
+  color: var(--yellow);
+  animation: blink .5s step-end infinite alternate;
+}
+/* End of Custom Edit */
+
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
@@ -10119,4 +10135,45 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+/* Custom */
+/* Workflow check icons */
+.fa-check{
+  color: var(--success);
+}
+
+
+/* Styling for type writer */
+.var-highlight{
+  color: var(--primary-shade);
+}
+.string-highlight{
+	color: var(--primary);
+}
+
+#typewriter{
+  font-size: 100%;
+  margin: 0;
+  font-family: "Courier New";
+}
+
+#typewriter:after{
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }
