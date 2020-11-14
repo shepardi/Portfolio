@@ -10148,6 +10148,10 @@ section.resume-section .resume-section-content {
   color: var(--success);
 }
 
+/* Profile Pic */
+#profile-pic:hover{
+  transform:scale(1.2);
+}
 
 /* Styling for type writer */
 .var-highlight{
